@@ -1,12 +1,83 @@
-# React + Vite
+# Screenpipe Activity Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time monitoring dashboard for visualizing and tracking your screen and audio activity data collected by Screenpipe.
 
-Currently, two official plugins are available:
+![Dashboard Preview](/api/placeholder/800/400)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+The Screenpipe Activity Dashboard is a React-based web application that provides visual insights into your computer usage patterns. It displays screen events, audio activity, application usage statistics, and screenshots collected by the Screenpipe monitoring tool, giving you a comprehensive view of your digital activities.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- **Real-time Activity Monitoring**: Automatically refreshes data every minute
+- **Interactive Dashboard**: Multiple views in a clean, modern interface
+- **Activity Overview**: Quick summary of screen events, audio events, and unique applications used
+- **Application Usage Statistics**: Bar charts and progress indicators showing which applications you use most
+- **Activity Timeline**: Chronological list of screen and audio events with timestamps
+- **Screenshot Gallery**: Visual history of your screen activity
+- **Activity Trends**: Line charts showing activity patterns over time
+- **Responsive Design**: Works on desktop and mobile devices
+
+## Tabs
+
+The dashboard includes four main tabs:
+
+1. **Overview**: Summary statistics and application usage charts
+2. **Timeline**: Chronological list of screen and audio activities
+3. **Screenshots**: Gallery of recent screenshots
+4. **Activity Trends**: Charts showing activity patterns over time
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+- Screenpipe application installed and running (for actual data collection)
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/screenpipe-dashboard.git
+   cd screenpipe-dashboard
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Start the development server:
+   ```
+   npm start
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## Configuration
+
+The dashboard connects to the Screenpipe API to fetch activity data. For development and testing purposes, the application includes mock data generation. 
+
+You can modify the API connection in `src/api/screenpipe.js`.
+
+## Dependencies
+
+- React
+- Recharts for data visualization
+- @screenpipe/browser for API integration
+
+## Development
+
+### Project Structure
+
+- `src/App.js`: Main application component and layout
+- `src/api/screenpipe.js`: API integration and data fetching logic
+- Component functions in App.js:
+  - `ActivitySummary`: Displays activity overview statistics
+  - `AppUsage`: Shows application usage charts
+  - `ActivityTimeline`: Renders the chronological timeline
+  - `LatestScreenshots`: Displays screenshot gallery
+  - `ActivityTrends`: Visualizes activity patterns over time
+
