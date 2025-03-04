@@ -2,8 +2,6 @@
 
 A real-time monitoring dashboard for visualizing and tracking your screen and audio activity data collected by Screenpipe.
 
-![Dashboard Preview](/api/placeholder/800/400)
-
 ## Overview
 
 The Screenpipe Activity Dashboard is a React-based web application that provides visual insights into your computer usage patterns. It displays screen events, audio activity, application usage statistics, and screenshots collected by the Screenpipe monitoring tool, giving you a comprehensive view of your digital activities.
